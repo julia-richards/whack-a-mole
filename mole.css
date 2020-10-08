@@ -7,6 +7,7 @@ body {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
+	background-color: #886124;
 }
 
 .wgs__mole-head {
@@ -16,7 +17,12 @@ body {
 	right: 77.5px;
 	top: 0;
 	transition: top 0.25s;
+	z-index: 0;
 }
+
+/* .wgs__mole-head:nth-child(n + 4) {
+	z-index: 2;
+} */
 
 .wgs__mole-head--hidden {
 	top: 241px;
@@ -27,9 +33,21 @@ body {
 	height: 110px;
 	position: absolute;
 	bottom: 0;
+	z-index: 2;
 }
 .pf {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
+	position: relative;
+}
+
+.pf__cover {
+	width: 100%;
+	position: absolute;
+	height: 55px;
+	background-color: #886124;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
 }

@@ -2,12 +2,18 @@
 window.addEventListener("DOMContentLoaded", () => {
 	function initialize() {
 		const heads = Array.from(document.querySelectorAll(".wgs__mole-head"));
+		const wrappers = document.querySelectorAll(".wgs");
 		heads.forEach((mole) => {
 			mole.classList.add("wgs__mole-head--hidden");
 			mole.addEventListener("click", (e) => {
 				mole.classList.add("wgs__mole-head--hidden");
 				mole.classList.add("wgs__mole-head--whacked");
 			});
+		});
+		wrappers.forEach((wrapper) => {
+			const cover = document.createElement("div");
+			cover.classList.add("pf__cover");
+			wrapper.appendChild(cover);
 		});
 	}
 	initialize();
