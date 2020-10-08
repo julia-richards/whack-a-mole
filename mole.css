@@ -1,26 +1,35 @@
+body {
+	zoom: 0.5;
+}
 .wgs {
-  width: 640px;
-  height: 482px;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+	width: 320px;
+	height: 241px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
 }
 
 .wgs__mole-head {
-  width: 376px;
-  height: 356px;
-  position: absolute;
-  right: 155px;
-  top: 0;
+	width: 188px;
+	height: 178px;
+	position: absolute;
+	right: 77.5px;
+	top: 0;
+	transition: top 0.25s;
 }
 
 .wgs__mole-head--hidden {
-  top: 482px;
+	top: 241px;
 }
 
 .wgs__dirt-pile {
-  width: 640px;
-  height: 220px;
-  position: absolute;
-  bottom: 0;
+	width: 320px;
+	height: 110px;
+	position: absolute;
+	bottom: 0;
+}
+.pf {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 }
