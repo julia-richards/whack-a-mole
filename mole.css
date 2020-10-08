@@ -39,7 +39,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	position: relative;
+  background-color: #886124;
 }
 
 .pf__cover {
